@@ -1,5 +1,5 @@
 {
-  "_comment": "Site options. aboutPhoto: which synced gallery image to use in the About section - an Instagram post id from gallery/manifest.json (e.g. \"17912345678901234\") or a filename in gallery/ (e.g. \"17912345678901234.jpg\"); leave empty for the placeholder. curation: the AI gallery picker - model decides painting vs. not and gallery-ready vs. context shot; newestGuaranteed = how many of your newest gallery-ready paintings always get a spot; halfLifeDays = recency preference (a post's score halves every N days; smaller = fresher gallery); weights = engagement mix; includeVideos = whether video posts may appear (thumbnail only); exclude = post ids to never show.",
+  "_comment": "Site options. aboutPhoto: which synced gallery image to use in the About section - an Instagram post id from gallery/manifest.json (e.g. \"17912345678901234\") or a filename in gallery/ (e.g. \"17912345678901234.jpg\"); leave empty for the placeholder. curation: the AI gallery picker - model decides painting vs. not and gallery-ready vs. context shot; newestGuaranteed = how many of your newest gallery-ready paintings always get a spot; halfLifeDays = recency preference (a post's score halves every N days; smaller = fresher gallery); weights = engagement mix; includeVideos = whether video posts may appear (thumbnail only); exclude = post ids to never show; include = post ids to always show (manual picks - fetched even if older than the sync window, never classified, never dropped).",
   "aboutPhoto": "",
   "curation": {
     "model": "claude-opus-4-8",
@@ -8,6 +8,11 @@
     "includeVideos": false,
     "exclude": [
       "18078090829805277"
+    ],
+    "include": [
+      "17910210267141609",
+      "18040715945102942",
+      "18413559556113568"
     ],
     "weights": {
       "likes": 1,

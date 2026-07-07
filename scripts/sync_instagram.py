@@ -227,8 +227,10 @@ def classify_new_posts(candidates, cache, config):
     """
     api_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
     # Re-classify anything cached under an older schema version.
+    pinned = set((config.get("curation") or {}).get("include") or [])
     todo = [(p, url) for p, url in candidates
-            if cache.get(p["id"], {}).get("v") != CACHE_VERSION]
+            if p["id"] not in pinned  # pinned posts show regardless - don't spend on them
+            and cache.get(p["id"], {}).get("v") != CACHE_VERSION]
     if not todo:
         return cache
     if not api_key:
@@ -289,21 +291,25 @@ def classify_new_posts(candidates, cache, config):
 
 
 def select_posts(candidates, cache, config):
-    """Gallery-ready paintings first; newest few guaranteed; ranked by
-    recency-decayed engagement; context-shot paintings only fill leftover
-    slots; 12 total."""
+    """Manually pinned posts always in; then gallery-ready paintings, newest
+    few guaranteed; ranked by recency-decayed engagement; context-shot
+    paintings only fill leftover slots; 12 total."""
     curation = config.get("curation") or {}
     newest_guaranteed = int(curation.get("newestGuaranteed", 3))
     half_life = curation.get("halfLifeDays", 60)
     weights = {**DEFAULT_WEIGHTS, **(curation.get("weights") or {})}
+    pinned_ids = set(curation.get("include") or [])
 
     def score(c):
         return engagement(c[0], weights, half_life)
 
+    pinned = [c for c in candidates if c[0]["id"] in pinned_ids]
+
     # Unclassified posts count as paintings so the gallery never starves.
     paintings = [
         (p, url) for p, url in candidates
-        if cache.get(p["id"], {}).get("painting") is not False
+        if p["id"] not in pinned_ids
+        and cache.get(p["id"], {}).get("painting") is not False
     ]
     ready = [c for c in paintings
              if cache.get(c[0]["id"], {}).get("gallery_ready") is True]
@@ -311,7 +317,7 @@ def select_posts(candidates, cache, config):
 
     guaranteed = ready[:newest_guaranteed]  # API returns newest first
     rest = sorted(ready[newest_guaranteed:], key=score, reverse=True)
-    selected = (guaranteed + rest)[:MAX_POSTS]
+    selected = (pinned + guaranteed + rest)[:MAX_POSTS]
     if len(selected) < MAX_POSTS:  # top up with context shots rather than run short
         selected += sorted(context, key=score, reverse=True)[:MAX_POSTS - len(selected)]
     selected.sort(key=score, reverse=True)
@@ -333,10 +339,25 @@ def main():
     data = api_get("me/media", {"fields": FIELDS, "limit": FETCH_LIMIT, "access_token": token})
     candidates = [(p, image_url(p)) for p in data.get("data", [])]
     candidates = [(p, url) for p, url in candidates if url]
+    pinned_ids = [str(x) for x in (curation.get("include") or [])]
     if not curation.get("includeVideos", False):
-        candidates = [(p, url) for p, url in candidates if p.get("media_type") != "VIDEO"]
+        candidates = [(p, url) for p, url in candidates
+                      if p.get("media_type") != "VIDEO" or p["id"] in pinned_ids]
     excluded = set(curation.get("exclude") or [])
     candidates = [(p, url) for p, url in candidates if p["id"] not in excluded]
+
+    # Manually pinned posts older than the fetch window are fetched directly.
+    have = {p["id"] for p, _ in candidates}
+    for pid in pinned_ids:
+        if pid in have:
+            continue
+        try:
+            post = api_get(pid, {"fields": FIELDS, "access_token": token})
+            url = image_url(post)
+            if url:
+                candidates.append((post, url))
+        except Exception as exc:  # noqa: BLE001 - a bad pin shouldn't sink the sync
+            print(f"::warning::Could not fetch pinned post {pid}: {exc}")
 
     if not candidates:
         print("::warning::API returned no displayable posts - gallery unchanged.")
