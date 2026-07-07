@@ -76,6 +76,13 @@ password — anyone who has it can read your Instagram media.
 > If a screen mentions app review or "advanced access": ignore it. Reading
 > your own account's media works in development mode with standard access.
 
+> **"Insufficient developer role" when logging in as @qhgflies?** While the
+> app is in development mode, the Instagram account must be a registered
+> tester first: in the app dashboard go to **App roles → Roles → Add
+> people**, pick the role **Instagram Tester**, and invite `qhgflies`. Then
+> log in to instagram.com as @qhgflies → **Settings → Apps and websites →
+> Tester invites** and accept. Now retry **Add account / Generate token**.
+
 ## 3. GitHub secrets
 
 The token is stored as an encrypted GitHub Actions secret — it never appears
