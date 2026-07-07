@@ -43,6 +43,8 @@ CLASSIFY_CACHE = os.path.join(GALLERY, "classify-cache.json")
 CONFIG = os.path.join(ROOT, "config.json")
 
 API_BASE = "https://graph.instagram.com/v23.0"
+THUMB_DIR = os.path.join(GALLERY, "thumbs")
+THUMB_WIDTH = 900
 MAX_POSTS = 12
 FETCH_LIMIT = 50
 FIELDS = (
@@ -415,12 +417,24 @@ def main():
             entry["trimmed"] = True
 
     # Record real image dimensions (post-crop) so the site can lay the grid
-    # out at true aspect ratios without waiting for images to load.
+    # out at true aspect ratios without waiting for images to load, and
+    # generate lightweight grid thumbnails (the lightbox keeps full res).
     try:
         from PIL import Image
+        os.makedirs(THUMB_DIR, exist_ok=True)
         for entry in posts_out:
-            with Image.open(os.path.join(GALLERY, os.path.basename(entry["file"]))) as im:
+            name = os.path.basename(entry["file"])
+            src = os.path.join(GALLERY, name)
+            dst = os.path.join(THUMB_DIR, name)
+            with Image.open(src) as im:
                 entry["width"], entry["height"] = im.size
+                if im.width > THUMB_WIDTH:
+                    if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
+                        thumb = im.convert("RGB")
+                        thumb.thumbnail((THUMB_WIDTH, THUMB_WIDTH * 4))
+                        thumb.save(dst, "JPEG", quality=82)
+            if os.path.exists(dst):
+                entry["thumb"] = f"gallery/thumbs/{name}"
     except ImportError:
         pass
 
@@ -443,13 +457,17 @@ def main():
     # Prune images that dropped out of the manifest. Keep the About photo and
     # the About placeholder no matter what.
     keep = {os.path.basename(p["file"]) for p in posts_out}
-    keep.update({"manifest.json", "classify-cache.json", "about-placeholder.svg"})
+    keep.update({"manifest.json", "classify-cache.json", "about-placeholder.svg", "thumbs"})
     about = about_photo_file(config)
     if about:
         keep.add(about)
     for name in os.listdir(GALLERY):
         if name not in keep:
             os.remove(os.path.join(GALLERY, name))
+    if os.path.isdir(THUMB_DIR):
+        for name in os.listdir(THUMB_DIR):
+            if name not in keep:
+                os.remove(os.path.join(THUMB_DIR, name))
 
     print(f"Synced {len(posts_out)} posts ({len(downloads)} new image(s) downloaded).")
     return 0

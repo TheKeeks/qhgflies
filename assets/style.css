@@ -183,6 +183,21 @@ body.lightbox-open .cta { display: none; }
   padding: 0 1.25rem;
   white-space: pre-line;
 }
+.lb-actions {
+  display: flex;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.lb-actions a {
+  color: #f2efe9;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(242, 239, 233, 0.5);
+  padding-bottom: 2px;
+}
+.lb-actions a:hover { border-color: #fff; }
+
 .lb-close, .lb-nav {
   position: fixed;
   z-index: 101;

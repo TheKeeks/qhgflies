@@ -33,7 +33,7 @@
     btn.type = "button";
     btn.setAttribute("aria-label", "View image " + (i + 1) + " of " + posts.length);
     var img = document.createElement("img");
-    img.src = post.file;
+    img.src = post.thumb || post.file; // small preview in the grid, full res in the lightbox
     img.alt = firstLine(post.caption) || "Painting by qhgflies";
     img.loading = "lazy";
     img.decoding = "async";
@@ -97,16 +97,39 @@
     }, 150);
   });
 
+  var FORM_BASE = "https://docs.google.com/forms/d/e/1FAIpQLScGPRN-xI1A-AXqXEKojnfBGQcBqmEWzFhIjf_oFViYlooAag/viewform";
+  var SUBJECT_ENTRY = "294529899";
+
   function openLightbox(i) {
     current = i;
     var post = posts[i];
     lbImg.src = post.file;
     lbImg.alt = firstLine(post.caption) || "Painting by qhgflies";
     lbCaption.textContent = post.caption || "";
+    var insta = document.getElementById("lb-insta");
+    if (post.permalink) {
+      insta.href = post.permalink;
+      insta.style.display = "";
+    } else {
+      insta.style.display = "none";
+    }
     lightbox.hidden = false;
     document.body.classList.add("lightbox-open");
     document.body.style.overflow = "hidden";
   }
+
+  document.getElementById("lb-commission").addEventListener("click", function () {
+    // Prefill the inquiry form with the piece being viewed, then jump there.
+    var post = current >= 0 ? posts[current] : null;
+    if (post) {
+      var ref = "Something like “" + (firstLine(post.caption) || "this piece") + "”";
+      if (post.permalink) ref += " (" + post.permalink + ")";
+      document.querySelector(".form-wrap iframe").src =
+        FORM_BASE + "?embedded=true&usp=pp_url&entry." + SUBJECT_ENTRY + "=" + encodeURIComponent(ref);
+    }
+    closeLightbox();
+    // let the browser handle the #inquiry anchor with smooth scroll
+  });
 
   function closeLightbox() {
     lightbox.hidden = true;
