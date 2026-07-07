@@ -8,8 +8,9 @@ Pipeline per run:
      (image + caption). Verdicts are cached in gallery/classify-cache.json and
      committed, so each post is classified exactly once.
   3. Select 12 posts: paintings only; the newest few paintings are always
-     included; remaining slots go to the highest-engagement paintings
-     (likes + 2 x comments). Displayed most-engaged first.
+     included; remaining slots go to the highest-engagement paintings, scored
+     as a weighted mix of likes, comments, saves, shares, and views
+     (weights configurable in config.json). Displayed most-engaged first.
   4. Download any new images and rewrite gallery/manifest.json.
 
 Fail-safe by design: nothing in gallery/ is touched until every API call and
@@ -88,6 +89,50 @@ def load_json(path, default):
         return default
 
 
+DEFAULT_WEIGHTS = {"likes": 1, "comments": 2, "saves": 3, "shares": 4, "views": 0.02}
+
+
+def fetch_insights(candidates, token):
+    """Attach saves/shares/views/reach insights to each post (best effort).
+
+    Insights require the instagram_business_manage_insights permission; if the
+    first call is denied, skip the rest and rank on likes/comments only.
+    """
+    for i, (post, _url) in enumerate(candidates):
+        try:
+            data = api_get(f"{post['id']}/insights", {
+                "metric": "views,reach,saved,shares",
+                "access_token": token,
+            })
+            metrics = {}
+            for item in data.get("data", []):
+                values = item.get("values") or [{}]
+                value = values[0].get("value")
+                if value is None:
+                    value = (item.get("total_value") or {}).get("value")
+                if isinstance(value, (int, float)):
+                    metrics[item["name"]] = value
+            post["_metrics"] = metrics
+        except Exception as exc:  # noqa: BLE001 - insights are a bonus, never fatal
+            post["_metrics"] = {}
+            if i == 0:
+                print(f"::warning::Post insights unavailable ({exc}) - ranking on "
+                      "likes/comments only. Grant instagram_business_manage_insights "
+                      "on the token to include saves/shares/views.")
+                break
+
+
+def engagement(post, weights=DEFAULT_WEIGHTS):
+    m = post.get("_metrics") or {}
+    return (
+        weights.get("likes", 1) * (post.get("like_count") or 0)
+        + weights.get("comments", 2) * (post.get("comments_count") or 0)
+        + weights.get("saves", 3) * (m.get("saved") or 0)
+        + weights.get("shares", 4) * (m.get("shares") or 0)
+        + weights.get("views", 0.02) * (m.get("views") or 0)
+    )
+
+
 def image_url(post):
     """Best displayable image URL for a post, or None to skip it."""
     mtype = post.get("media_type")
@@ -105,10 +150,6 @@ def image_url(post):
                 return child["thumbnail_url"]
         return post.get("media_url") or post.get("thumbnail_url")
     return None
-
-
-def engagement(post):
-    return (post.get("like_count") or 0) + 2 * (post.get("comments_count") or 0)
 
 
 def about_photo_file(config):
@@ -179,6 +220,7 @@ def select_posts(candidates, cache, config):
     """Paintings only; newest few guaranteed; rest by engagement; 12 total."""
     curation = config.get("curation") or {}
     newest_guaranteed = int(curation.get("newestGuaranteed", 3))
+    weights = {**DEFAULT_WEIGHTS, **(curation.get("weights") or {})}
 
     # Unclassified posts count as paintings so the gallery never starves.
     paintings = [
@@ -186,10 +228,11 @@ def select_posts(candidates, cache, config):
         if cache.get(p["id"], {}).get("painting") is not False
     ]
     guaranteed = paintings[:newest_guaranteed]  # API returns newest first
-    rest = sorted(paintings[newest_guaranteed:], key=lambda c: engagement(c[0]), reverse=True)
+    rest = sorted(paintings[newest_guaranteed:],
+                  key=lambda c: engagement(c[0], weights), reverse=True)
     selected = (guaranteed + rest)[:MAX_POSTS]
     # Display order: crowd favorites first.
-    selected.sort(key=lambda c: engagement(c[0]), reverse=True)
+    selected.sort(key=lambda c: engagement(c[0], weights), reverse=True)
     return selected
 
 
@@ -212,6 +255,7 @@ def main():
         print("::warning::API returned no displayable posts - gallery unchanged.")
         return 0
 
+    fetch_insights(candidates, token)
     cache = load_json(CLASSIFY_CACHE, {})
     cache = classify_new_posts(candidates, cache, config)
     selected = select_posts(candidates, cache, config)
@@ -242,6 +286,7 @@ def main():
                 "timestamp": post.get("timestamp"),
                 "likes": post.get("like_count") or 0,
                 "comments": post.get("comments_count") or 0,
+                "metrics": post.get("_metrics") or {},
             })
 
         for filename, tmp_path in downloads.items():

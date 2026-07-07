@@ -3,6 +3,13 @@
   "aboutPhoto": "",
   "curation": {
     "model": "claude-opus-4-8",
-    "newestGuaranteed": 3
+    "newestGuaranteed": 3,
+    "weights": {
+      "likes": 1,
+      "comments": 2,
+      "saves": 3,
+      "shares": 4,
+      "views": 0.02
+    }
   }
 }
