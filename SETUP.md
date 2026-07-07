@@ -88,11 +88,11 @@ password — anyone who has it can read your Instagram media.
 The token is stored as an encrypted GitHub Actions secret — it never appears
 in the code or the published site.
 
-### 3a. `INSTAGRAM_ACCESS_TOKEN`
+### 3a. `INSTAACCESSTOKEN`
 
 1. Repo → **Settings** → **Secrets and variables** → **Actions** →
    **New repository secret**.
-2. Name: `INSTAGRAM_ACCESS_TOKEN`. Value: paste the token from step 2c.
+2. Name: `INSTAACCESSTOKEN`. Value: paste the token from step 2c.
 
 ### 3b. `SECRETS_ADMIN_PAT` (lets the token refresh itself)
 

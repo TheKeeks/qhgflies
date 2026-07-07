@@ -1,5 +1,6 @@
-# Refreshes the long-lived Instagram access token every week so it never hits
-# its 60-day expiry, and writes the new token back to the repo secret.
+# Refreshes the long-lived Instagram access token (secret INSTAACCESSTOKEN)
+# every week so it never hits its 60-day expiry, and writes the new token
+# back to the repo secret.
 # Needs SECRETS_ADMIN_PAT (fine-grained PAT with "Secrets: read and write" on
 # this repo) because the default GITHUB_TOKEN cannot update Actions secrets.
 name: Refresh Instagram token
@@ -18,12 +19,12 @@ jobs:
     steps:
       - name: Refresh token and update repo secret
         env:
-          CURRENT_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          CURRENT_TOKEN: ${{ secrets.INSTAACCESSTOKEN }}
           GH_TOKEN: ${{ secrets.SECRETS_ADMIN_PAT }}
         run: |
           set -euo pipefail
           if [ -z "${CURRENT_TOKEN}" ] || [ -z "${GH_TOKEN}" ]; then
-            echo "::warning::INSTAGRAM_ACCESS_TOKEN or SECRETS_ADMIN_PAT not set - skipping refresh."
+            echo "::warning::INSTAACCESSTOKEN or SECRETS_ADMIN_PAT not set - skipping refresh."
             exit 0
           fi
           resp=$(curl -sfG "https://graph.instagram.com/refresh_access_token" \
@@ -36,6 +37,6 @@ jobs:
             exit 1
           fi
           echo "::add-mask::$new_token"
-          gh secret set INSTAGRAM_ACCESS_TOKEN --repo "$GITHUB_REPOSITORY" --body "$new_token"
+          gh secret set INSTAACCESSTOKEN --repo "$GITHUB_REPOSITORY" --body "$new_token"
           expires_days=$(( $(jq -r '.expires_in // 0' <<< "$resp") / 86400 ))
           echo "Token refreshed and secret updated; new token valid for ~${expires_days} days."

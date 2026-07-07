@@ -25,7 +25,7 @@ jobs:
 
       - name: Fetch latest posts from Instagram
         env:
-          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAACCESSTOKEN }}
         run: python3 scripts/sync_instagram.py
 
       - name: Commit gallery changes
