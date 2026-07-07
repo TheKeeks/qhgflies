@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#dcd6cb"/>
+  <circle cx="400" cy="360" r="150" fill="#b9ab94" opacity="0.6"/>
+  <rect x="250" y="520" width="300" height="330" rx="150" fill="#8f9a8b" opacity="0.5"/>
+  <rect x="24" y="24" width="752" height="952" fill="none" stroke="#faf9f7" stroke-width="10" opacity="0.6"/>
+  <text x="400" y="940" font-family="Georgia, serif" font-size="30" fill="#faf9f7" text-anchor="middle" opacity="0.9">about photo — pick one in config.json</text>
+</svg>

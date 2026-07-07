@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Commission information for qhgflies.">
+  <title>qhgflies — Commissions</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <a class="cta" href="#inquiry">Start a commission&nbsp;&rarr;</a>
+
+  <header class="section header">
+    <h1>qhgflies — Commissions</h1>
+    <p class="tagline">Thanks for your interest — here&rsquo;s how it works.</p>
+  </header>
+
+  <main>
+    <section class="section" id="work">
+      <h2>Recent work</h2>
+      <div class="gallery" id="gallery" aria-live="polite">
+        <!-- populated from gallery/manifest.json -->
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <h2>Pricing</h2>
+      <ul class="pricing">
+        <li><span class="size">8&thinsp;&times;&thinsp;10</span><span class="dots" aria-hidden="true"></span><span class="price">starting at $700</span></li>
+        <li><span class="size">16&thinsp;&times;&thinsp;20</span><span class="dots" aria-hidden="true"></span><span class="price">starting at $1,000</span></li>
+        <li><span class="size">18&thinsp;&times;&thinsp;24</span><span class="dots" aria-hidden="true"></span><span class="price">starting at $1,250</span></li>
+        <li><span class="size">Larger / custom</span><span class="dots" aria-hidden="true"></span><span class="price">sounds fun, let&rsquo;s talk</span></li>
+      </ul>
+      <p class="note">Every piece is quoted individually based on complexity — you&rsquo;ll have a final price before any deposit.</p>
+    </section>
+
+    <section class="section" id="process">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li>Send an inquiry below with what you have in mind.</li>
+        <li>You&rsquo;ll get a quote within 3 business days.</li>
+        <li>A 50% deposit reserves your slot — progress photo at the midpoint.</li>
+        <li>Balance is due before delivery.</li>
+      </ol>
+    </section>
+
+    <section class="section" id="inquiry">
+      <h2>Start a commission</h2>
+      <div class="form-wrap">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScGPRN-xI1A-AXqXEKojnfBGQcBqmEWzFhIjf_oFViYlooAag/viewform?embedded=true"
+          title="Commission inquiry form"
+          loading="lazy"
+          width="100%"
+          height="1850"
+          frameborder="0" marginheight="0" marginwidth="0">Loading&hellip;
+        </iframe>
+        <p class="form-fallback">If the form doesn&rsquo;t load, <a href="https://docs.google.com/forms/d/e/1FAIpQLScGPRN-xI1A-AXqXEKojnfBGQcBqmEWzFhIjf_oFViYlooAag/viewform" target="_blank" rel="noopener">open it in a new tab</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>About</h2>
+      <div class="about">
+        <img id="about-photo" src="gallery/about-placeholder.svg" alt="qhgflies painting" loading="lazy">
+        <div class="about-text">
+          <p>While painting on Park Ave recently, I had the wildest encounter — I was interviewed for the <a href="https://www.newyorksocialdiary.com/a-young-painter-and-an-old-new-york-thread/" target="_blank" rel="noopener">New York Social Diary</a> at the very moment my grandmother&rsquo;s old doorman, whom I&rsquo;d never met, recognized me by how much I look like my family.</p>
+          <p><a class="follow" href="https://instagram.com/qhgflies" target="_blank" rel="noopener">Follow along&nbsp;&rarr;</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section footer">
+    <p>deposits non-refundable once work begins &middot; typical turnaround ~4 weeks &middot; payments to qhgflies</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog">
+    <button class="lb-close" id="lb-close" aria-label="Close">&times;</button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous">&larr;</button>
+    <figure>
+      <img id="lb-img" src="" alt="">
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Next">&rarr;</button>
+  </div>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+{
+  "_comment": "Site options. aboutPhoto: which synced gallery image to use in the About section. Set it to an Instagram post id from gallery/manifest.json (e.g. \"17912345678901234\") or a filename in gallery/ (e.g. \"17912345678901234.jpg\"). Leave empty to keep the placeholder.",
+  "aboutPhoto": ""
+}
