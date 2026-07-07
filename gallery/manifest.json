@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-07-07T21:10:25+00:00",
+  "updated": "2026-07-07T21:36:48+00:00",
   "posts": [
     {
       "id": "18128494885591569",
@@ -9,7 +9,13 @@
       "permalink": "https://www.instagram.com/reel/DYcptg1x2fb/",
       "timestamp": "2026-05-17T17:12:12+0000",
       "likes": 420,
-      "comments": 6
+      "comments": 6,
+      "metrics": {
+        "views": 7535,
+        "reach": 6024,
+        "saved": 9,
+        "shares": 28
+      }
     },
     {
       "id": "17964787119117516",
@@ -18,34 +24,13 @@
       "permalink": "https://www.instagram.com/p/DYZ5Yz0kejN/",
       "timestamp": "2026-05-16T15:30:38+0000",
       "likes": 77,
-      "comments": 11
-    },
-    {
-      "id": "18591088462019289",
-      "file": "gallery/18591088462019289.jpg",
-      "caption": "Bigger and bigger format. Salvage v2 — “He’s Gone”\n\n13 x 23” watercolor",
-      "permalink": "https://www.instagram.com/p/DZqc6tNkXZ9/",
-      "timestamp": "2026-06-16T22:20:20+0000",
-      "likes": 73,
-      "comments": 5
-    },
-    {
-      "id": "18413559556113568",
-      "file": "gallery/18413559556113568.jpg",
-      "caption": "A few of my favorite things, in a frame",
-      "permalink": "https://www.instagram.com/p/DOq46CPEZAu/",
-      "timestamp": "2025-09-16T16:39:34+0000",
-      "likes": 61,
-      "comments": 6
-    },
-    {
-      "id": "18327927922243103",
-      "file": "gallery/18327927922243103.jpg",
-      "caption": "Stayed in the city no exception to the rules",
-      "permalink": "https://www.instagram.com/p/DRNGU-2EZTd/",
-      "timestamp": "2025-11-18T16:33:49+0000",
-      "likes": 57,
-      "comments": 6
+      "comments": 11,
+      "metrics": {
+        "views": 2348,
+        "reach": 1243,
+        "saved": 9,
+        "shares": 3
+      }
     },
     {
       "id": "18041173571407423",
@@ -54,25 +39,13 @@
       "permalink": "https://www.instagram.com/reel/DOj5VreEY6D/",
       "timestamp": "2025-09-13T23:32:43+0000",
       "likes": 66,
-      "comments": 1
-    },
-    {
-      "id": "18112062887497630",
-      "file": "gallery/18112062887497630.jpg",
-      "caption": "Isabella (2/3)\n\n9x12 watercolor",
-      "permalink": "https://www.instagram.com/p/DZcpBKXR7UZ/",
-      "timestamp": "2026-06-11T13:37:02+0000",
-      "likes": 58,
-      "comments": 4
-    },
-    {
-      "id": "18078090829805277",
-      "file": "gallery/18078090829805277.jpg",
-      "caption": "Therapy turned performative",
-      "permalink": "https://www.instagram.com/p/DN6fY_Vkbaj/",
-      "timestamp": "2025-08-28T21:33:04+0000",
-      "likes": 50,
-      "comments": 4
+      "comments": 1,
+      "metrics": {
+        "views": 4696,
+        "reach": 3499,
+        "saved": 1,
+        "shares": 2
+      }
     },
     {
       "id": "18008533766892890",
@@ -81,16 +54,103 @@
       "permalink": "https://www.instagram.com/p/DWnH6B_FAsK/",
       "timestamp": "2026-04-02T01:44:50+0000",
       "likes": 51,
-      "comments": 3
+      "comments": 3,
+      "metrics": {
+        "views": 3506,
+        "reach": 2484,
+        "saved": 0,
+        "shares": 2
+      }
     },
     {
-      "id": "17848258092606843",
-      "file": "gallery/17848258092606843.jpg",
-      "caption": "Afternoon moment",
-      "permalink": "https://www.instagram.com/p/DRfvmBREeK7/",
-      "timestamp": "2025-11-25T22:20:44+0000",
-      "likes": 51,
-      "comments": 3
+      "id": "18327927922243103",
+      "file": "gallery/18327927922243103.jpg",
+      "caption": "Stayed in the city no exception to the rules",
+      "permalink": "https://www.instagram.com/p/DRNGU-2EZTd/",
+      "timestamp": "2025-11-18T16:33:49+0000",
+      "likes": 57,
+      "comments": 6,
+      "metrics": {
+        "views": 1545,
+        "reach": 743,
+        "saved": 3,
+        "shares": 2
+      }
+    },
+    {
+      "id": "18591088462019289",
+      "file": "gallery/18591088462019289.jpg",
+      "caption": "Bigger and bigger format. Salvage v2 — “He’s Gone”\n\n13 x 23” watercolor",
+      "permalink": "https://www.instagram.com/p/DZqc6tNkXZ9/",
+      "timestamp": "2026-06-16T22:20:20+0000",
+      "likes": 73,
+      "comments": 5,
+      "metrics": {
+        "views": 1263,
+        "reach": 534,
+        "saved": 1,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18413559556113568",
+      "file": "gallery/18413559556113568.jpg",
+      "caption": "A few of my favorite things, in a frame",
+      "permalink": "https://www.instagram.com/p/DOq46CPEZAu/",
+      "timestamp": "2025-09-16T16:39:34+0000",
+      "likes": 61,
+      "comments": 6,
+      "metrics": {
+        "views": 1572,
+        "reach": 619,
+        "saved": 2,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18078090829805277",
+      "file": "gallery/18078090829805277.jpg",
+      "caption": "Therapy turned performative",
+      "permalink": "https://www.instagram.com/p/DN6fY_Vkbaj/",
+      "timestamp": "2025-08-28T21:33:04+0000",
+      "likes": 50,
+      "comments": 4,
+      "metrics": {
+        "views": 1521,
+        "reach": 551,
+        "saved": 2,
+        "shares": 3
+      }
+    },
+    {
+      "id": "17891880888480472",
+      "file": "gallery/17891880888480472.jpg",
+      "caption": "Composition experimenting — sitting in the car at the race in the rain",
+      "permalink": "https://www.instagram.com/p/DY7sl79kcVV/",
+      "timestamp": "2026-05-29T18:33:00+0000",
+      "likes": 44,
+      "comments": 0,
+      "metrics": {
+        "views": 1889,
+        "reach": 1026,
+        "saved": 2,
+        "shares": 2
+      }
+    },
+    {
+      "id": "18184261150338478",
+      "file": "gallery/18184261150338478.jpg",
+      "caption": "Row, Jimmy. Row",
+      "permalink": "https://www.instagram.com/p/DXwvKaFkXF6/",
+      "timestamp": "2026-04-30T15:52:25+0000",
+      "likes": 42,
+      "comments": 6,
+      "metrics": {
+        "views": 990,
+        "reach": 524,
+        "saved": 2,
+        "shares": 3
+      }
     },
     {
       "id": "18111657565736397",
@@ -99,7 +159,13 @@
       "permalink": "https://www.instagram.com/p/DadZsi7ESxW/",
       "timestamp": "2026-07-06T17:13:27+0000",
       "likes": 35,
-      "comments": 2
+      "comments": 2,
+      "metrics": {
+        "views": 492,
+        "reach": 190,
+        "saved": 0,
+        "shares": 0
+      }
     },
     {
       "id": "17946826044214255",
@@ -108,7 +174,13 @@
       "permalink": "https://www.instagram.com/p/DaacB8ykXJx/",
       "timestamp": "2026-07-05T13:36:08+0000",
       "likes": 22,
-      "comments": 0
+      "comments": 0,
+      "metrics": {
+        "views": 401,
+        "reach": 154,
+        "saved": 0,
+        "shares": 0
+      }
     }
   ]
 }
