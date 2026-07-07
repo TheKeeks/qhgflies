@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
-  <rect width="800" height="800" fill="#d6dad8"/>
-  <circle cx="270" cy="290" r="230" fill="#8fa79e" opacity="0.55"/>
-  <circle cx="350" cy="230" r="280" fill="#c8b8a1" opacity="0.45"/>
-  <rect x="24" y="24" width="752" height="752" fill="none" stroke="#faf9f7" stroke-width="10" opacity="0.6"/>
-  <text x="400" y="420" font-family="Georgia, serif" font-size="34" fill="#faf9f7" text-anchor="middle" opacity="0.85">placeholder 10</text>
-</svg>
