@@ -11,10 +11,15 @@ Three things to do by hand, in order. Everything else is automated. Budget
 
 ## 1. Turn on GitHub Pages
 
-1. Open the repo on GitHub → **Settings** → **Pages** (left sidebar).
-2. Under **Build and deployment → Source**, choose **GitHub Actions**.
-3. Go to the **Actions** tab → **Deploy to GitHub Pages** → **Run workflow**.
-4. In a minute or two the site is live at **https://thekeeks.github.io/qhgflies/**.
+The deploy workflow enables Pages by itself on its first successful run, so
+usually there's nothing to do — check the **Actions** tab for a green
+**Deploy to GitHub Pages** run and the site is live at
+**https://thekeeks.github.io/qhgflies/**.
+
+If that run is red with a "Get Pages site failed" error, enable it by hand
+once: repo **Settings** → **Pages** → under **Build and deployment →
+Source** choose **GitHub Actions**, then re-run the workflow from the
+Actions tab.
 
 That's it — every future push (and every Instagram sync) redeploys
 automatically. A truly custom domain (like `commissions.qhgflies.com`) would
