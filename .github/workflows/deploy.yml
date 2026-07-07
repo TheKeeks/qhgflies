@@ -1,0 +1,39 @@
+# Publishes the site to GitHub Pages.
+# Runs on every push, on demand, and is called by sync-instagram.yml after a
+# gallery update (pushes made with GITHUB_TOKEN don't trigger push workflows,
+# so the sync workflow calls this one directly).
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main, claude/qhgflies-commission-site-w4ixos]
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Branch tip, not the triggering SHA — when called from the sync
+          # workflow the gallery commit is newer than the SHA that started the run.
+          ref: ${{ github.ref_name }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4

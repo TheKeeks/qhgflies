@@ -1,0 +1,54 @@
+# Pulls the latest posts from @qhgflies every 6 hours, commits any new
+# images/captions to gallery/, and redeploys the site. If the Instagram API
+# call fails, the run fails loudly but the gallery and live site are untouched.
+name: Sync Instagram gallery
+
+on:
+  schedule:
+    - cron: "23 */6 * * *" # every 6 hours (offset to avoid top-of-hour congestion)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-instagram
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch latest posts from Instagram
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+        run: python3 scripts/sync_instagram.py
+
+      - name: Commit gallery changes
+        id: commit
+        run: |
+          if git diff --quiet -- gallery && [ -z "$(git status --porcelain gallery)" ]; then
+            echo "No gallery changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add gallery
+            git commit -m "Sync Instagram gallery"
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  deploy:
+    needs: sync
+    if: needs.sync.outputs.changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy.yml
