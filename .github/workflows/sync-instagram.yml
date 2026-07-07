@@ -7,6 +7,10 @@ on:
   schedule:
     - cron: "23 */6 * * *" # every 6 hours (offset to avoid top-of-hour congestion)
   workflow_dispatch:
+  push:
+    paths: # also run whenever the sync logic itself changes
+      - ".github/workflows/sync-instagram.yml"
+      - "scripts/sync_instagram.py"
 
 permissions:
   contents: write
