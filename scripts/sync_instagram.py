@@ -23,6 +23,7 @@ as paintings (and re-classified next run) - the site never goes empty.
 Env: INSTAGRAM_ACCESS_TOKEN (required), ANTHROPIC_API_KEY (optional).
 """
 
+import base64
 import datetime
 import json
 import os
@@ -187,13 +188,19 @@ def classify_new_posts(candidates, cache, config):
 
     for post, url in todo:
         try:
+            # Fetch the image ourselves and send bytes: Anthropic's URL fetcher
+            # is blocked by Instagram's CDN robots.txt.
+            with http_get(url) as resp:
+                image_b64 = base64.standard_b64encode(resp.read()).decode()
             response = client.messages.create(
                 model=model,
                 max_tokens=256,
                 messages=[{
                     "role": "user",
                     "content": [
-                        {"type": "image", "source": {"type": "url", "url": url}},
+                        {"type": "image", "source": {
+                            "type": "base64", "media_type": "image/jpeg",
+                            "data": image_b64}},
                         {"type": "text", "text": CLASSIFY_PROMPT.format(
                             caption=(post.get("caption") or "(no caption)")[:1500])},
                     ],
