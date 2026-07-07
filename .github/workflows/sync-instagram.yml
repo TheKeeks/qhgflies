@@ -27,8 +27,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install AI-curation dependency
-        run: pip install --quiet anthropic
+      - name: Install AI-curation dependencies
+        run: pip install --quiet anthropic pillow
 
       - name: Sync and curate posts from Instagram
         env:
