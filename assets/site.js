@@ -24,14 +24,26 @@
     return (text || "").split("\n")[0].slice(0, 140);
   }
 
-  var lastCols = null;
+  function aspect(post) {
+    return (post.width && post.height) ? post.width / post.height : 1;
+  }
 
-  function columnCount() {
-    return window.innerWidth >= 480 ? 3 : 2;
+  function makeTile(post, i) {
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.setAttribute("aria-label", "View image " + (i + 1) + " of " + posts.length);
+    var img = document.createElement("img");
+    img.src = post.file;
+    img.alt = firstLine(post.caption) || "Painting by qhgflies";
+    img.loading = "lazy";
+    img.decoding = "async";
+    img.style.aspectRatio = (post.width || 1) + " / " + (post.height || 1);
+    btn.appendChild(img);
+    btn.addEventListener("click", function () { openLightbox(i); });
+    return btn;
   }
 
   function renderGallery() {
-    lastCols = columnCount();
     galleryEl.textContent = "";
     if (!posts.length) {
       var p = document.createElement("p");
@@ -40,43 +52,49 @@
       galleryEl.appendChild(p);
       return;
     }
-    // Masonry at true aspect ratios: each image goes to the currently
-    // shortest column, so panoramas stay wide and portraits stay tall.
-    var cols = [], heights = [];
-    for (var c = 0; c < columnCount(); c++) {
-      var col = document.createElement("div");
-      col.className = "gallery-col";
-      galleryEl.appendChild(col);
-      cols.push(col);
-      heights.push(0);
+    // Justified rows at true aspect ratios: each row fills the full width,
+    // images share it proportionally to their shape, so a panorama takes a
+    // whole row and nothing gets small or cropped.
+    var width = galleryEl.clientWidth || 600;
+    var gap = 10;
+    var target = width >= 560 ? 290 : 250; // ideal row height in px
+    var row = [], arSum = 0;
+
+    function closeRow(justify) {
+      var rowEl = document.createElement("div");
+      rowEl.className = "gallery-row";
+      var height = (width - gap * (row.length - 1)) / arSum;
+      row.forEach(function (item) {
+        if (justify) {
+          item.tile.style.flex = item.ar + " 1 0%";
+        } else {
+          // last row: keep the ideal height, don't stretch to fill
+          item.tile.style.flex = "0 0 " + Math.min(item.ar * target, width) + "px";
+        }
+        rowEl.appendChild(item.tile);
+      });
+      galleryEl.appendChild(rowEl);
+      row = []; arSum = 0;
     }
+
     posts.forEach(function (post, i) {
-      var ratio = (post.width && post.height) ? post.height / post.width : 1;
-      var btn = document.createElement("button");
-      btn.type = "button";
-      btn.setAttribute("aria-label", "View image " + (i + 1) + " of " + posts.length);
-      var img = document.createElement("img");
-      img.src = post.file;
-      img.alt = firstLine(post.caption) || "Painting by qhgflies";
-      img.loading = "lazy";
-      img.decoding = "async";
-      if (post.width && post.height) {
-        img.style.aspectRatio = post.width + " / " + post.height;
-      }
-      btn.appendChild(img);
-      btn.addEventListener("click", function () { openLightbox(i); });
-      var k = heights.indexOf(Math.min.apply(null, heights));
-      cols[k].appendChild(btn);
-      heights[k] += ratio + 0.05; // small allowance for the gap
+      var ar = aspect(post);
+      row.push({ tile: makeTile(post, i), ar: ar });
+      arSum += ar;
+      var height = (width - gap * (row.length - 1)) / arSum;
+      if (height <= target * 1.15) closeRow(true); // 15% tolerance lets panoramas go solo
     });
+    if (row.length) closeRow(false);
   }
 
+  var lastWidth = null;
   window.addEventListener("resize", function () {
-    var n = columnCount();
-    if (posts.length && n !== lastCols) {
-      lastCols = n;
-      renderGallery();
-    }
+    if (!posts.length) return;
+    clearTimeout(renderGallery._t);
+    renderGallery._t = setTimeout(function () {
+      var w = galleryEl.clientWidth;
+      if (w !== lastWidth) { lastWidth = w; renderGallery(); }
+    }, 150);
   });
 
   function openLightbox(i) {
