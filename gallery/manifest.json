@@ -1,22 +1,7 @@
 {
   "source": "instagram",
-  "updated": "2026-07-07T21:43:56+00:00",
+  "updated": "2026-07-07T22:05:01+00:00",
   "posts": [
-    {
-      "id": "18128494885591569",
-      "file": "gallery/18128494885591569.jpg",
-      "caption": "Acrosssss… The Central Park Lake-y-o",
-      "permalink": "https://www.instagram.com/reel/DYcptg1x2fb/",
-      "timestamp": "2026-05-17T17:12:12+0000",
-      "likes": 420,
-      "comments": 6,
-      "metrics": {
-        "views": 7535,
-        "reach": 6024,
-        "saved": 9,
-        "shares": 28
-      }
-    },
     {
       "id": "17964787119117516",
       "file": "gallery/17964787119117516.jpg",
@@ -30,36 +15,6 @@
         "reach": 1243,
         "saved": 9,
         "shares": 3
-      }
-    },
-    {
-      "id": "18008533766892890",
-      "file": "gallery/18008533766892890.jpg",
-      "caption": "Seven blessings",
-      "permalink": "https://www.instagram.com/p/DWnH6B_FAsK/",
-      "timestamp": "2026-04-02T01:44:50+0000",
-      "likes": 51,
-      "comments": 3,
-      "metrics": {
-        "views": 3506,
-        "reach": 2484,
-        "saved": 0,
-        "shares": 2
-      }
-    },
-    {
-      "id": "18327927922243103",
-      "file": "gallery/18327927922243103.jpg",
-      "caption": "Stayed in the city no exception to the rules",
-      "permalink": "https://www.instagram.com/p/DRNGU-2EZTd/",
-      "timestamp": "2025-11-18T16:33:49+0000",
-      "likes": 57,
-      "comments": 6,
-      "metrics": {
-        "views": 1545,
-        "reach": 743,
-        "saved": 3,
-        "shares": 2
       }
     },
     {
@@ -78,33 +33,18 @@
       }
     },
     {
-      "id": "18413559556113568",
-      "file": "gallery/18413559556113568.jpg",
-      "caption": "A few of my favorite things, in a frame",
-      "permalink": "https://www.instagram.com/p/DOq46CPEZAu/",
-      "timestamp": "2025-09-16T16:39:34+0000",
-      "likes": 61,
-      "comments": 6,
-      "metrics": {
-        "views": 1572,
-        "reach": 619,
-        "saved": 2,
-        "shares": 0
-      }
-    },
-    {
-      "id": "18078090829805277",
-      "file": "gallery/18078090829805277.jpg",
-      "caption": "Therapy turned performative",
-      "permalink": "https://www.instagram.com/p/DN6fY_Vkbaj/",
-      "timestamp": "2025-08-28T21:33:04+0000",
-      "likes": 50,
+      "id": "18112062887497630",
+      "file": "gallery/18112062887497630.jpg",
+      "caption": "Isabella (2/3)\n\n9x12 watercolor",
+      "permalink": "https://www.instagram.com/p/DZcpBKXR7UZ/",
+      "timestamp": "2026-06-11T13:37:02+0000",
+      "likes": 58,
       "comments": 4,
       "metrics": {
-        "views": 1521,
-        "reach": 551,
-        "saved": 2,
-        "shares": 3
+        "views": 887,
+        "reach": 451,
+        "saved": 1,
+        "shares": 0
       }
     },
     {
@@ -123,6 +63,36 @@
       }
     },
     {
+      "id": "18111657565736397",
+      "file": "gallery/18111657565736397.jpg",
+      "caption": "ICW Scenes\n\n9 x 12”",
+      "permalink": "https://www.instagram.com/p/DadZsi7ESxW/",
+      "timestamp": "2026-07-06T17:13:27+0000",
+      "likes": 35,
+      "comments": 2,
+      "metrics": {
+        "views": 494,
+        "reach": 190,
+        "saved": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "17902950675439085",
+      "file": "gallery/17902950675439085.jpg",
+      "caption": "Salvage value assessment with @bobby_macleod",
+      "permalink": "https://www.instagram.com/p/DZTJbV1PlMY/",
+      "timestamp": "2026-06-07T21:24:07+0000",
+      "likes": 39,
+      "comments": 0,
+      "metrics": {
+        "views": 887,
+        "reach": 446,
+        "saved": 1,
+        "shares": 0
+      }
+    },
+    {
       "id": "18184261150338478",
       "file": "gallery/18184261150338478.jpg",
       "caption": "Row, Jimmy. Row",
@@ -138,47 +108,77 @@
       }
     },
     {
-      "id": "17848258092606843",
-      "file": "gallery/17848258092606843.jpg",
-      "caption": "Afternoon moment",
-      "permalink": "https://www.instagram.com/p/DRfvmBREeK7/",
-      "timestamp": "2025-11-25T22:20:44+0000",
-      "likes": 51,
-      "comments": 3,
-      "metrics": {
-        "views": 1159,
-        "reach": 529,
-        "saved": 1,
-        "shares": 1
-      }
-    },
-    {
-      "id": "18111657565736397",
-      "file": "gallery/18111657565736397.jpg",
-      "caption": "ICW Scenes\n\n9 x 12”",
-      "permalink": "https://www.instagram.com/p/DadZsi7ESxW/",
-      "timestamp": "2026-07-06T17:13:27+0000",
-      "likes": 35,
+      "id": "18076931954281612",
+      "file": "gallery/18076931954281612.jpg",
+      "caption": "Isabella\n\n9x12 watercolor",
+      "permalink": "https://www.instagram.com/p/DZcpOH0x2GB/",
+      "timestamp": "2026-06-11T13:38:44+0000",
+      "likes": 33,
       "comments": 2,
       "metrics": {
-        "views": 492,
-        "reach": 190,
+        "views": 834,
+        "reach": 391,
         "saved": 0,
         "shares": 0
       }
     },
     {
-      "id": "17946826044214255",
-      "file": "gallery/17946826044214255.jpg",
-      "caption": "Venting",
-      "permalink": "https://www.instagram.com/p/DaacB8ykXJx/",
-      "timestamp": "2026-07-05T13:36:08+0000",
-      "likes": 22,
+      "id": "18042772382571170",
+      "file": "gallery/18042772382571170.jpg",
+      "caption": "Everybody knows him",
+      "permalink": "https://www.instagram.com/p/DYF4FR8kaez/",
+      "timestamp": "2026-05-08T20:56:32+0000",
+      "likes": 28,
+      "comments": 2,
+      "metrics": {
+        "views": 1723,
+        "reach": 1003,
+        "saved": 1,
+        "shares": 1
+      }
+    },
+    {
+      "id": "18007744985911785",
+      "file": "gallery/18007744985911785.jpg",
+      "caption": "1192 value study. Not every day you look up from the easel and hear “are you a Yerkes?” from the doorman!",
+      "permalink": "https://www.instagram.com/p/DX2EDKUEV0z/",
+      "timestamp": "2026-05-02T17:32:45+0000",
+      "likes": 29,
+      "comments": 8,
+      "metrics": {
+        "views": 1119,
+        "reach": 664,
+        "saved": 1,
+        "shares": 0
+      }
+    },
+    {
+      "id": "17876641818603451",
+      "file": "gallery/17876641818603451.jpg",
+      "caption": "Charles / MGH — Go Jumbos",
+      "permalink": "https://www.instagram.com/p/DYqlhnguUD2/",
+      "timestamp": "2026-05-23T03:06:20+0000",
+      "likes": 18,
       "comments": 0,
       "metrics": {
-        "views": 401,
-        "reach": 154,
-        "saved": 0,
+        "views": 1505,
+        "reach": 955,
+        "saved": 2,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18090698879212408",
+      "file": "gallery/18090698879212408.jpg",
+      "caption": "Driving to Raglan w @elsieharrington",
+      "permalink": "https://www.instagram.com/p/DXzz0S6kekO/",
+      "timestamp": "2026-05-01T20:31:25+0000",
+      "likes": 29,
+      "comments": 1,
+      "metrics": {
+        "views": 985,
+        "reach": 569,
+        "saved": 4,
         "shares": 0
       }
     }
