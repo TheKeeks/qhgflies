@@ -12,9 +12,10 @@ secrets. Everything after that is automatic.
 | Piece | What it does |
 | --- | --- |
 | `index.html`, `assets/` | The whole site — no build step. |
-| `gallery/manifest.json` | The 12 posts the gallery shows (newest first). |
-| `config.json` | Site options — set `aboutPhoto` to a gallery filename to pick the About photo. |
-| `scripts/sync_instagram.py` | Downloads new posts + captions, rewrites the manifest. Touches nothing on failure. |
+| `gallery/manifest.json` | The 12 posts the gallery shows (most-engaged paintings first). |
+| `gallery/classify-cache.json` | Claude's painting/not-painting verdict per post — edit to overrule. |
+| `config.json` | Site options — `aboutPhoto` picks the About image; `curation` tunes the AI picker. |
+| `scripts/sync_instagram.py` | Fetches ~50 recent posts with engagement, AI-filters to paintings, picks the top 12, rewrites the manifest. Touches nothing on failure. |
 | `.github/workflows/sync-instagram.yml` | Runs the sync every 6 hours, commits, redeploys. |
 | `.github/workflows/deploy.yml` | Publishes to GitHub Pages on every push. |
 | `.github/workflows/refresh-token.yml` | Renews the Instagram token weekly so it never expires. |

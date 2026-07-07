@@ -1,4 +1,8 @@
 {
-  "_comment": "Site options. aboutPhoto: which synced gallery image to use in the About section. Set it to an Instagram post id from gallery/manifest.json (e.g. \"17912345678901234\") or a filename in gallery/ (e.g. \"17912345678901234.jpg\"). Leave empty to keep the placeholder.",
-  "aboutPhoto": ""
+  "_comment": "Site options. aboutPhoto: which synced gallery image to use in the About section - an Instagram post id from gallery/manifest.json (e.g. \"17912345678901234\") or a filename in gallery/ (e.g. \"17912345678901234.jpg\"); leave empty for the placeholder. curation: the AI gallery picker - model is the Claude model used to decide painting vs. not; newestGuaranteed is how many of your newest paintings always get a spot regardless of likes.",
+  "aboutPhoto": "",
+  "curation": {
+    "model": "claude-opus-4-8",
+    "newestGuaranteed": 3
+  }
 }

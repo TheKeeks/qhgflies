@@ -111,6 +111,26 @@ needs a small personal access token from you:
 5. Generate, copy, and save it as a second repo secret named
    `SECRETS_ADMIN_PAT` (same as step 3a).
 
+## 3c. `ANTHROPIC_API_KEY` (optional — AI gallery curation)
+
+With this key set, every sync asks Claude to look at each new post and decide
+whether it's one of your paintings; the gallery then shows only paintings,
+ranked by engagement (likes + 2×comments), with your 3 newest paintings
+always included. Without the key, the gallery simply shows your 12 latest
+posts of any kind — nothing breaks.
+
+1. Go to **https://console.anthropic.com** → sign up / log in → **API keys**
+   → **Create key**. (You'll need to add a small amount of billing credit —
+   $5 lasts a very long time here: each post is classified exactly once,
+   for roughly a cent or two.)
+2. Save it as a repo secret named `ANTHROPIC_API_KEY` (same place as the
+   others).
+
+Verdicts are cached in `gallery/classify-cache.json`. If the AI ever gets one
+wrong, you can overrule it: edit that file and flip the post's `"painting"`
+value — your edit sticks, because posts are only ever classified once.
+Tuning knobs live in `config.json` under `curation`.
+
 ## 4. Test it
 
 1. **Actions** tab → **Sync Instagram gallery** → **Run workflow**. When it
