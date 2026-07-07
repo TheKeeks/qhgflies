@@ -393,6 +393,16 @@ def main():
                 print(f"::warning::Border trim failed for {post['id']}: {exc}")
             entry["trimmed"] = True
 
+    # Record real image dimensions (post-crop) so the site can lay the grid
+    # out at true aspect ratios without waiting for images to load.
+    try:
+        from PIL import Image
+        for entry in posts_out:
+            with Image.open(os.path.join(GALLERY, os.path.basename(entry["file"]))) as im:
+                entry["width"], entry["height"] = im.size
+    except ImportError:
+        pass
+
     manifest = {
         "source": "instagram",
         "updated": now_iso(),

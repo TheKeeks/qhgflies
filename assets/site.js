@@ -24,9 +24,34 @@
     return (text || "").split("\n")[0].slice(0, 140);
   }
 
+  var lastCols = null;
+
+  function columnCount() {
+    return window.innerWidth >= 480 ? 3 : 2;
+  }
+
   function renderGallery() {
+    lastCols = columnCount();
     galleryEl.textContent = "";
+    if (!posts.length) {
+      var p = document.createElement("p");
+      p.className = "gallery-empty";
+      p.textContent = "New work coming soon — follow @qhgflies on Instagram in the meantime.";
+      galleryEl.appendChild(p);
+      return;
+    }
+    // Masonry at true aspect ratios: each image goes to the currently
+    // shortest column, so panoramas stay wide and portraits stay tall.
+    var cols = [], heights = [];
+    for (var c = 0; c < columnCount(); c++) {
+      var col = document.createElement("div");
+      col.className = "gallery-col";
+      galleryEl.appendChild(col);
+      cols.push(col);
+      heights.push(0);
+    }
     posts.forEach(function (post, i) {
+      var ratio = (post.width && post.height) ? post.height / post.width : 1;
       var btn = document.createElement("button");
       btn.type = "button";
       btn.setAttribute("aria-label", "View image " + (i + 1) + " of " + posts.length);
@@ -35,17 +60,24 @@
       img.alt = firstLine(post.caption) || "Painting by qhgflies";
       img.loading = "lazy";
       img.decoding = "async";
+      if (post.width && post.height) {
+        img.style.aspectRatio = post.width + " / " + post.height;
+      }
       btn.appendChild(img);
       btn.addEventListener("click", function () { openLightbox(i); });
-      galleryEl.appendChild(btn);
+      var k = heights.indexOf(Math.min.apply(null, heights));
+      cols[k].appendChild(btn);
+      heights[k] += ratio + 0.05; // small allowance for the gap
     });
-    if (!posts.length) {
-      var p = document.createElement("p");
-      p.className = "gallery-empty";
-      p.textContent = "New work coming soon — follow @qhgflies on Instagram in the meantime.";
-      galleryEl.appendChild(p);
-    }
   }
+
+  window.addEventListener("resize", function () {
+    var n = columnCount();
+    if (posts.length && n !== lastCols) {
+      lastCols = n;
+      renderGallery();
+    }
+  });
 
   function openLightbox(i) {
     current = i;
