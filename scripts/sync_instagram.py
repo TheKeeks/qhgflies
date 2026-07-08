@@ -456,17 +456,23 @@ def main():
 
     # Prune images that dropped out of the manifest. Keep the About photo and
     # the About placeholder no matter what.
+    # Only synced post images (all-digit filenames) are ever deleted - manual
+    # uploads like a custom About photo are always left alone.
     keep = {os.path.basename(p["file"]) for p in posts_out}
-    keep.update({"manifest.json", "classify-cache.json", "about-placeholder.svg", "thumbs"})
     about = about_photo_file(config)
     if about:
         keep.add(about)
+
+    def is_synced_post_image(name):
+        stem, _, ext = name.rpartition(".")
+        return ext == "jpg" and stem.isdigit()
+
     for name in os.listdir(GALLERY):
-        if name not in keep:
+        if name not in keep and is_synced_post_image(name):
             os.remove(os.path.join(GALLERY, name))
     if os.path.isdir(THUMB_DIR):
         for name in os.listdir(THUMB_DIR):
-            if name not in keep:
+            if name not in keep and is_synced_post_image(name):
                 os.remove(os.path.join(THUMB_DIR, name))
 
     print(f"Synced {len(posts_out)} posts ({len(downloads)} new image(s) downloaded).")
