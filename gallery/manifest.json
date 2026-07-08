@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-07-07T23:52:58+00:00",
+  "updated": "2026-07-08T00:56:58+00:00",
   "posts": [
     {
       "id": "17964787119117516",
@@ -11,8 +11,8 @@
       "likes": 77,
       "comments": 11,
       "metrics": {
-        "views": 2357,
-        "reach": 1245,
+        "views": 2358,
+        "reach": 1247,
         "saved": 9,
         "shares": 3
       },
@@ -29,8 +29,8 @@
       "likes": 73,
       "comments": 5,
       "metrics": {
-        "views": 1268,
-        "reach": 538,
+        "views": 1269,
+        "reach": 539,
         "saved": 1,
         "shares": 0
       },
@@ -47,8 +47,8 @@
       "likes": 58,
       "comments": 4,
       "metrics": {
-        "views": 893,
-        "reach": 454,
+        "views": 895,
+        "reach": 455,
         "saved": 1,
         "shares": 0
       },
@@ -65,8 +65,8 @@
       "likes": 44,
       "comments": 0,
       "metrics": {
-        "views": 1894,
-        "reach": 1028,
+        "views": 1895,
+        "reach": 1029,
         "saved": 2,
         "shares": 2
       },
@@ -82,8 +82,8 @@
       "likes": 35,
       "comments": 2,
       "metrics": {
-        "views": 504,
-        "reach": 195,
+        "views": 510,
+        "reach": 197,
         "saved": 0,
         "shares": 0
       },
@@ -100,8 +100,8 @@
       "likes": 39,
       "comments": 0,
       "metrics": {
-        "views": 895,
-        "reach": 449,
+        "views": 896,
+        "reach": 450,
         "saved": 1,
         "shares": 0
       },
@@ -136,8 +136,8 @@
       "likes": 33,
       "comments": 2,
       "metrics": {
-        "views": 839,
-        "reach": 395,
+        "views": 841,
+        "reach": 397,
         "saved": 0,
         "shares": 0
       },
@@ -154,8 +154,8 @@
       "likes": 28,
       "comments": 2,
       "metrics": {
-        "views": 1730,
-        "reach": 1006,
+        "views": 1731,
+        "reach": 1008,
         "saved": 1,
         "shares": 1
       },
@@ -169,11 +169,11 @@
       "caption": "Toasty AM\n3 x 8” ish",
       "permalink": "https://www.instagram.com/p/DaggNnoxRx2/",
       "timestamp": "2026-07-07T22:08:48+0000",
-      "likes": 6,
-      "comments": 0,
+      "likes": 8,
+      "comments": 1,
       "metrics": {
-        "views": 208,
-        "reach": 108,
+        "views": 315,
+        "reach": 186,
         "saved": 0,
         "shares": 1
       },
