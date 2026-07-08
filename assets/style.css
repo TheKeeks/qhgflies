@@ -124,13 +124,21 @@ body.lightbox-open .cta { display: none; }
 .form-fallback { color: var(--muted); font-size: 0.85rem; }
 
 /* About */
+.about-figure {
+  margin: 0 0 1.5rem;
+  max-width: 420px;
+}
 .about img {
   width: 100%;
-  max-width: 420px;
   border-radius: 2px;
   display: block;
-  margin-bottom: 1.5rem;
 }
+.photo-credit {
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+.photo-credit a { color: inherit; }
 .follow { text-decoration: none; border-bottom: 1px solid var(--ink); padding-bottom: 2px; }
 
 /* Footer */
