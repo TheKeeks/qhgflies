@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-07-13T18:54:34+00:00",
+  "updated": "2026-07-14T00:53:11+00:00",
   "posts": [
     {
       "id": "17964787119117516",
@@ -79,35 +79,17 @@
       "caption": "ICW Scenes\n\n9 x 12”",
       "permalink": "https://www.instagram.com/p/DadZsi7ESxW/",
       "timestamp": "2026-07-06T17:13:27+0000",
-      "likes": 42,
+      "likes": 43,
       "comments": 2,
       "metrics": {
-        "views": 681,
-        "reach": 255,
+        "views": 686,
+        "reach": 256,
         "saved": 0,
         "shares": 0
       },
       "width": 2954,
       "height": 2144,
       "thumb": "gallery/thumbs/18111657565736397.jpg"
-    },
-    {
-      "id": "17902950675439085",
-      "file": "gallery/17902950675439085.jpg",
-      "caption": "Salvage value assessment with @bobby_macleod",
-      "permalink": "https://www.instagram.com/p/DZTJbV1PlMY/",
-      "timestamp": "2026-06-07T21:24:07+0000",
-      "likes": 39,
-      "comments": 0,
-      "metrics": {
-        "views": 910,
-        "reach": 457,
-        "saved": 1,
-        "shares": 0
-      },
-      "width": 940,
-      "height": 732,
-      "thumb": "gallery/thumbs/17902950675439085.jpg"
     },
     {
       "id": "18184261150338478",
@@ -154,8 +136,8 @@
       "likes": 15,
       "comments": 2,
       "metrics": {
-        "views": 773,
-        "reach": 440,
+        "views": 774,
+        "reach": 441,
         "saved": 0,
         "shares": 1
       },
@@ -180,6 +162,24 @@
       "width": 1173,
       "height": 1564,
       "thumb": "gallery/thumbs/18042772382571170.jpg"
+    },
+    {
+      "id": "18007744985911785",
+      "file": "gallery/18007744985911785.jpg",
+      "caption": "1192 value study. Not every day you look up from the easel and hear “are you a Yerkes?” from the doorman!\n9 x 12”",
+      "permalink": "https://www.instagram.com/p/DX2EDKUEV0z/",
+      "timestamp": "2026-05-02T17:32:45+0000",
+      "likes": 29,
+      "comments": 8,
+      "metrics": {
+        "views": 1129,
+        "reach": 668,
+        "saved": 1,
+        "shares": 0
+      },
+      "width": 1440,
+      "height": 1920,
+      "thumb": "gallery/thumbs/18007744985911785.jpg"
     },
     {
       "id": "17910210267141609",
