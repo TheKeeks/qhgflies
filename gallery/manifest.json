@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-07-14T12:50:48+00:00",
+  "updated": "2026-07-14T18:46:46+00:00",
   "posts": [
     {
       "id": "17964787119117516",
@@ -47,8 +47,8 @@
       "likes": 58,
       "comments": 4,
       "metrics": {
-        "views": 908,
-        "reach": 468,
+        "views": 910,
+        "reach": 469,
         "saved": 2,
         "shares": 0
       },
@@ -65,8 +65,8 @@
       "likes": 44,
       "comments": 3,
       "metrics": {
-        "views": 689,
-        "reach": 258,
+        "views": 694,
+        "reach": 260,
         "saved": 0,
         "shares": 0
       },
@@ -136,8 +136,8 @@
       "likes": 15,
       "comments": 2,
       "metrics": {
-        "views": 778,
-        "reach": 441,
+        "views": 786,
+        "reach": 444,
         "saved": 0,
         "shares": 1
       },
