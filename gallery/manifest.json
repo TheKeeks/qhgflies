@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-07-16T18:47:06+00:00",
+  "updated": "2026-07-17T00:56:54+00:00",
   "posts": [
     {
       "id": "17964787119117516",
@@ -11,8 +11,8 @@
       "likes": 77,
       "comments": 11,
       "metrics": {
-        "views": 2389,
-        "reach": 1253,
+        "views": 2390,
+        "reach": 1254,
         "saved": 9,
         "shares": 3
       },
@@ -29,7 +29,7 @@
       "likes": 74,
       "comments": 5,
       "metrics": {
-        "views": 1292,
+        "views": 1293,
         "reach": 550,
         "saved": 1,
         "shares": 0
@@ -47,7 +47,7 @@
       "likes": 58,
       "comments": 4,
       "metrics": {
-        "views": 911,
+        "views": 914,
         "reach": 470,
         "saved": 2,
         "shares": 0
@@ -65,8 +65,8 @@
       "likes": 45,
       "comments": 3,
       "metrics": {
-        "views": 711,
-        "reach": 269,
+        "views": 718,
+        "reach": 272,
         "saved": 0,
         "shares": 0
       },
@@ -83,7 +83,7 @@
       "likes": 44,
       "comments": 0,
       "metrics": {
-        "views": 1911,
+        "views": 1912,
         "reach": 1038,
         "saved": 2,
         "shares": 2
@@ -100,8 +100,8 @@
       "likes": 42,
       "comments": 6,
       "metrics": {
-        "views": 995,
-        "reach": 526,
+        "views": 996,
+        "reach": 527,
         "saved": 2,
         "shares": 3
       },
@@ -118,7 +118,7 @@
       "likes": 33,
       "comments": 2,
       "metrics": {
-        "views": 866,
+        "views": 867,
         "reach": 407,
         "saved": 0,
         "shares": 0
@@ -136,7 +136,7 @@
       "likes": 15,
       "comments": 2,
       "metrics": {
-        "views": 821,
+        "views": 823,
         "reach": 451,
         "saved": 0,
         "shares": 1
@@ -154,8 +154,8 @@
       "likes": 28,
       "comments": 2,
       "metrics": {
-        "views": 1754,
-        "reach": 1014,
+        "views": 1756,
+        "reach": 1016,
         "saved": 1,
         "shares": 1
       },
@@ -172,7 +172,7 @@
       "likes": 29,
       "comments": 8,
       "metrics": {
-        "views": 1130,
+        "views": 1131,
         "reach": 668,
         "saved": 1,
         "shares": 0
@@ -190,7 +190,7 @@
       "likes": 26,
       "comments": 1,
       "metrics": {
-        "views": 755,
+        "views": 756,
         "reach": 494,
         "saved": 2,
         "shares": 0
