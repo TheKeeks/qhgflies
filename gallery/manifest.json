@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-07-20T00:59:16+00:00",
+  "updated": "2026-07-20T07:30:32+00:00",
   "posts": [
     {
       "id": "17964787119117516",
@@ -8,11 +8,11 @@
       "caption": "1192 - @n_y_george vibes\n20 x 16”",
       "permalink": "https://www.instagram.com/p/DYZ5Yz0kejN/",
       "timestamp": "2026-05-16T15:30:38+0000",
-      "likes": 78,
+      "likes": 79,
       "comments": 11,
       "metrics": {
-        "views": 2404,
-        "reach": 1260,
+        "views": 2409,
+        "reach": 1262,
         "saved": 9,
         "shares": 3
       },
@@ -26,11 +26,11 @@
       "caption": "He’s Gone\n13 x 23”",
       "permalink": "https://www.instagram.com/p/DZqc6tNkXZ9/",
       "timestamp": "2026-06-16T22:20:20+0000",
-      "likes": 74,
+      "likes": 75,
       "comments": 5,
       "metrics": {
-        "views": 1312,
-        "reach": 553,
+        "views": 1315,
+        "reach": 555,
         "saved": 1,
         "shares": 0
       },
@@ -44,12 +44,12 @@
       "caption": "ICW Scenes\n\n9 x 12”",
       "permalink": "https://www.instagram.com/p/DadZsi7ESxW/",
       "timestamp": "2026-07-06T17:13:27+0000",
-      "likes": 47,
+      "likes": 48,
       "comments": 3,
       "metrics": {
-        "views": 750,
-        "reach": 288,
-        "saved": 0,
+        "views": 757,
+        "reach": 291,
+        "saved": 1,
         "shares": 0
       },
       "width": 2954,
@@ -62,11 +62,11 @@
       "caption": "Isabella (2/3)\n\n9x12 watercolor",
       "permalink": "https://www.instagram.com/p/DZcpBKXR7UZ/",
       "timestamp": "2026-06-11T13:37:02+0000",
-      "likes": 58,
+      "likes": 59,
       "comments": 4,
       "metrics": {
-        "views": 925,
-        "reach": 474,
+        "views": 932,
+        "reach": 476,
         "saved": 2,
         "shares": 0
       },
@@ -83,13 +83,31 @@
       "likes": 44,
       "comments": 0,
       "metrics": {
-        "views": 1925,
-        "reach": 1041,
+        "views": 1928,
+        "reach": 1043,
         "saved": 2,
         "shares": 2
       },
       "width": 796,
       "height": 730
+    },
+    {
+      "id": "18076931954281612",
+      "file": "gallery/18076931954281612.jpg",
+      "caption": "Isabella\n9x12”",
+      "permalink": "https://www.instagram.com/p/DZcpOH0x2GB/",
+      "timestamp": "2026-06-11T13:38:44+0000",
+      "likes": 34,
+      "comments": 3,
+      "metrics": {
+        "views": 890,
+        "reach": 414,
+        "saved": 0,
+        "shares": 0
+      },
+      "width": 3567,
+      "height": 2610,
+      "thumb": "gallery/thumbs/18076931954281612.jpg"
     },
     {
       "id": "18184261150338478",
@@ -100,32 +118,14 @@
       "likes": 42,
       "comments": 6,
       "metrics": {
-        "views": 1006,
-        "reach": 529,
+        "views": 1010,
+        "reach": 530,
         "saved": 2,
         "shares": 3
       },
       "width": 1156,
       "height": 863,
       "thumb": "gallery/thumbs/18184261150338478.jpg"
-    },
-    {
-      "id": "18076931954281612",
-      "file": "gallery/18076931954281612.jpg",
-      "caption": "Isabella\n9x12”",
-      "permalink": "https://www.instagram.com/p/DZcpOH0x2GB/",
-      "timestamp": "2026-06-11T13:38:44+0000",
-      "likes": 33,
-      "comments": 2,
-      "metrics": {
-        "views": 886,
-        "reach": 413,
-        "saved": 0,
-        "shares": 0
-      },
-      "width": 3567,
-      "height": 2610,
-      "thumb": "gallery/thumbs/18076931954281612.jpg"
     },
     {
       "id": "18085906085147211",
@@ -136,8 +136,8 @@
       "likes": 15,
       "comments": 2,
       "metrics": {
-        "views": 847,
-        "reach": 463,
+        "views": 855,
+        "reach": 466,
         "saved": 0,
         "shares": 1
       },
@@ -151,11 +151,11 @@
       "caption": "Everybody knows him\n6 x 9”",
       "permalink": "https://www.instagram.com/p/DYF4FR8kaez/",
       "timestamp": "2026-05-08T20:56:32+0000",
-      "likes": 28,
+      "likes": 29,
       "comments": 2,
       "metrics": {
-        "views": 1770,
-        "reach": 1023,
+        "views": 1772,
+        "reach": 1026,
         "saved": 1,
         "shares": 1
       },
@@ -169,11 +169,11 @@
       "caption": "1192 value study. Not every day you look up from the easel and hear “are you a Yerkes?” from the doorman!\n9 x 12”",
       "permalink": "https://www.instagram.com/p/DX2EDKUEV0z/",
       "timestamp": "2026-05-02T17:32:45+0000",
-      "likes": 30,
+      "likes": 31,
       "comments": 8,
       "metrics": {
-        "views": 1137,
-        "reach": 672,
+        "views": 1139,
+        "reach": 674,
         "saved": 1,
         "shares": 0
       },
@@ -190,8 +190,8 @@
       "likes": 26,
       "comments": 1,
       "metrics": {
-        "views": 760,
-        "reach": 495,
+        "views": 762,
+        "reach": 498,
         "saved": 2,
         "shares": 0
       },
@@ -208,7 +208,7 @@
       "likes": 61,
       "comments": 6,
       "metrics": {
-        "views": 1581,
+        "views": 1582,
         "reach": 624,
         "saved": 2,
         "shares": 0
