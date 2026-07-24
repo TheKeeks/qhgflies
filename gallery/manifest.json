@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-07-24T00:54:28+00:00",
+  "updated": "2026-07-24T07:16:58+00:00",
   "posts": [
     {
       "id": "17964787119117516",
@@ -11,7 +11,7 @@
       "likes": 79,
       "comments": 11,
       "metrics": {
-        "views": 2417,
+        "views": 2420,
         "reach": 1266,
         "saved": 9,
         "shares": 3
@@ -29,8 +29,8 @@
       "likes": 75,
       "comments": 5,
       "metrics": {
-        "views": 1328,
-        "reach": 559,
+        "views": 1331,
+        "reach": 560,
         "saved": 1,
         "shares": 0
       },
@@ -47,7 +47,7 @@
       "likes": 48,
       "comments": 3,
       "metrics": {
-        "views": 770,
+        "views": 771,
         "reach": 296,
         "saved": 1,
         "shares": 0
@@ -65,7 +65,7 @@
       "likes": 59,
       "comments": 5,
       "metrics": {
-        "views": 941,
+        "views": 944,
         "reach": 483,
         "saved": 2,
         "shares": 0
@@ -83,7 +83,7 @@
       "likes": 44,
       "comments": 0,
       "metrics": {
-        "views": 1939,
+        "views": 1943,
         "reach": 1046,
         "saved": 2,
         "shares": 2
@@ -100,7 +100,7 @@
       "likes": 34,
       "comments": 3,
       "metrics": {
-        "views": 904,
+        "views": 907,
         "reach": 418,
         "saved": 0,
         "shares": 0
@@ -136,8 +136,8 @@
       "likes": 15,
       "comments": 2,
       "metrics": {
-        "views": 871,
-        "reach": 474,
+        "views": 872,
+        "reach": 475,
         "saved": 0,
         "shares": 1
       },
@@ -154,7 +154,7 @@
       "likes": 29,
       "comments": 2,
       "metrics": {
-        "views": 1779,
+        "views": 1782,
         "reach": 1028,
         "saved": 1,
         "shares": 1
@@ -172,8 +172,8 @@
       "likes": 31,
       "comments": 8,
       "metrics": {
-        "views": 1145,
-        "reach": 675,
+        "views": 1146,
+        "reach": 676,
         "saved": 1,
         "shares": 0
       },
