@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-07-29T13:05:47+00:00",
+  "updated": "2026-07-29T18:42:59+00:00",
   "posts": [
     {
       "id": "17964787119117516",
@@ -11,7 +11,7 @@
       "likes": 79,
       "comments": 11,
       "metrics": {
-        "views": 2424,
+        "views": 2425,
         "reach": 1267,
         "saved": 9,
         "shares": 3
@@ -47,7 +47,7 @@
       "likes": 48,
       "comments": 3,
       "metrics": {
-        "views": 780,
+        "views": 781,
         "reach": 300,
         "saved": 1,
         "shares": 0
@@ -83,7 +83,7 @@
       "likes": 44,
       "comments": 0,
       "metrics": {
-        "views": 1945,
+        "views": 1946,
         "reach": 1046,
         "saved": 2,
         "shares": 2
@@ -100,7 +100,7 @@
       "likes": 34,
       "comments": 3,
       "metrics": {
-        "views": 909,
+        "views": 910,
         "reach": 418,
         "saved": 0,
         "shares": 0
@@ -118,7 +118,7 @@
       "likes": 42,
       "comments": 6,
       "metrics": {
-        "views": 1012,
+        "views": 1013,
         "reach": 531,
         "saved": 2,
         "shares": 3
@@ -136,7 +136,7 @@
       "likes": 15,
       "comments": 2,
       "metrics": {
-        "views": 885,
+        "views": 886,
         "reach": 478,
         "saved": 0,
         "shares": 1
@@ -154,7 +154,7 @@
       "likes": 29,
       "comments": 2,
       "metrics": {
-        "views": 1786,
+        "views": 1788,
         "reach": 1029,
         "saved": 1,
         "shares": 1
@@ -164,22 +164,22 @@
       "thumb": "gallery/thumbs/18042772382571170.jpg"
     },
     {
-      "id": "18007744985911785",
-      "file": "gallery/18007744985911785.jpg",
-      "caption": "1192 value study. Not every day you look up from the easel and hear “are you a Yerkes?” from the doorman!\n9 x 12”",
-      "permalink": "https://www.instagram.com/p/DX2EDKUEV0z/",
-      "timestamp": "2026-05-02T17:32:45+0000",
-      "likes": 31,
-      "comments": 8,
+      "id": "18176835499375334",
+      "file": "gallery/18176835499375334.jpg",
+      "caption": "On a cool sea\n9x12”",
+      "permalink": "https://www.instagram.com/p/DbYMkVKR-Jq/",
+      "timestamp": "2026-07-29T13:18:00+0000",
+      "likes": 18,
+      "comments": 1,
       "metrics": {
-        "views": 1146,
-        "reach": 676,
-        "saved": 1,
+        "views": 183,
+        "reach": 94,
+        "saved": 0,
         "shares": 0
       },
-      "width": 1440,
-      "height": 1920,
-      "thumb": "gallery/thumbs/18007744985911785.jpg"
+      "width": 1192,
+      "height": 900,
+      "thumb": "gallery/thumbs/18176835499375334.jpg"
     },
     {
       "id": "17910210267141609",
