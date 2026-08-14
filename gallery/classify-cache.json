@@ -39,6 +39,14 @@
     "trimmed": true,
     "v": 2
   },
+  "17901251382483366": {
+    "classified_at": "2026-08-14T03:03:19+00:00",
+    "gallery_ready": true,
+    "model": "claude-opus-4-8",
+    "painting": true,
+    "trimmed": true,
+    "v": 2
+  },
   "17910210267141609": {
     "classified_at": "2026-07-07T22:04:08+00:00",
     "gallery_ready": true,
@@ -49,14 +57,6 @@
   },
   "17929461005991123": {
     "classified_at": "2026-07-07T22:04:24+00:00",
-    "gallery_ready": true,
-    "model": "claude-opus-4-8",
-    "painting": true,
-    "trimmed": false,
-    "v": 2
-  },
-  "17946636317851913": {
-    "classified_at": "2026-07-07T22:04:54+00:00",
     "gallery_ready": true,
     "model": "claude-opus-4-8",
     "painting": true,
