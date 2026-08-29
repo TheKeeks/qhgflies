@@ -135,6 +135,14 @@
     "trimmed": true,
     "v": 2
   },
+  "18085333793660960": {
+    "classified_at": "2026-08-29T21:00:59+00:00",
+    "gallery_ready": false,
+    "model": "claude-opus-4-8",
+    "painting": true,
+    "trimmed": false,
+    "v": 2
+  },
   "18085906085147211": {
     "classified_at": "2026-07-07T22:22:33+00:00",
     "gallery_ready": true,
