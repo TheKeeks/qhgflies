@@ -1,12 +1,4 @@
 {
-  "17845262865511812": {
-    "classified_at": "2026-07-07T22:04:41+00:00",
-    "gallery_ready": true,
-    "model": "claude-opus-4-8",
-    "painting": true,
-    "trimmed": false,
-    "v": 2
-  },
   "17848258092606843": {
     "classified_at": "2026-07-07T22:04:12+00:00",
     "gallery_ready": false,
