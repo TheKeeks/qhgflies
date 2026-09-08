@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-09-08T16:44:35+00:00",
+  "updated": "2026-09-08T21:16:23+00:00",
   "posts": [
     {
       "id": "18128390953679722",
@@ -8,10 +8,10 @@
       "caption": "Light",
       "permalink": "https://www.instagram.com/p/DcYquzVxo-Y/",
       "timestamp": "2026-08-23T14:09:00+0000",
-      "likes": 103,
+      "likes": 104,
       "comments": 1,
       "metrics": {
-        "views": 1873,
+        "views": 1875,
         "reach": 950,
         "saved": 3,
         "shares": 2
@@ -29,8 +29,8 @@
       "likes": 62,
       "comments": 3,
       "metrics": {
-        "views": 1273,
-        "reach": 707,
+        "views": 1277,
+        "reach": 709,
         "saved": 0,
         "shares": 2
       },
@@ -47,7 +47,7 @@
       "likes": 71,
       "comments": 7,
       "metrics": {
-        "views": 1108,
+        "views": 1110,
         "reach": 436,
         "saved": 0,
         "shares": 0
@@ -83,7 +83,7 @@
       "likes": 77,
       "comments": 5,
       "metrics": {
-        "views": 1424,
+        "views": 1427,
         "reach": 604,
         "saved": 1,
         "shares": 0
@@ -101,7 +101,7 @@
       "likes": 61,
       "comments": 5,
       "metrics": {
-        "views": 1087,
+        "views": 1088,
         "reach": 559,
         "saved": 3,
         "shares": 0
@@ -119,7 +119,7 @@
       "likes": 49,
       "comments": 3,
       "metrics": {
-        "views": 893,
+        "views": 894,
         "reach": 349,
         "saved": 1,
         "shares": 0
@@ -137,7 +137,7 @@
       "likes": 35,
       "comments": 0,
       "metrics": {
-        "views": 632,
+        "views": 634,
         "reach": 306,
         "saved": 0,
         "shares": 0
@@ -155,7 +155,7 @@
       "likes": 32,
       "comments": 1,
       "metrics": {
-        "views": 772,
+        "views": 775,
         "reach": 353,
         "saved": 0,
         "shares": 1
@@ -173,7 +173,7 @@
       "likes": 44,
       "comments": 0,
       "metrics": {
-        "views": 2028,
+        "views": 2031,
         "reach": 1086,
         "saved": 2,
         "shares": 2
