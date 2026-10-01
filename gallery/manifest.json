@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-10-01T13:33:52+00:00",
+  "updated": "2026-10-01T22:47:34+00:00",
   "posts": [
     {
       "id": "18128390953679722",
@@ -11,8 +11,8 @@
       "likes": 104,
       "comments": 1,
       "metrics": {
-        "views": 1925,
-        "reach": 971,
+        "views": 1927,
+        "reach": 972,
         "saved": 3,
         "shares": 2
       },
@@ -29,8 +29,8 @@
       "likes": 66,
       "comments": 4,
       "metrics": {
-        "views": 1143,
-        "reach": 580,
+        "views": 1146,
+        "reach": 581,
         "saved": 0,
         "shares": 0
       },
@@ -47,8 +47,8 @@
       "likes": 62,
       "comments": 3,
       "metrics": {
-        "views": 1339,
-        "reach": 737,
+        "views": 1342,
+        "reach": 738,
         "saved": 0,
         "shares": 2
       },
@@ -65,8 +65,8 @@
       "likes": 71,
       "comments": 7,
       "metrics": {
-        "views": 1154,
-        "reach": 463,
+        "views": 1156,
+        "reach": 464,
         "saved": 0,
         "shares": 0
       },
@@ -155,7 +155,7 @@
       "likes": 35,
       "comments": 0,
       "metrics": {
-        "views": 664,
+        "views": 665,
         "reach": 322,
         "saved": 0,
         "shares": 0
