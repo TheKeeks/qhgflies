@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-10-16T16:48:03+00:00",
+  "updated": "2026-10-16T21:24:37+00:00",
   "posts": [
     {
       "id": "18128390953679722",
@@ -11,7 +11,7 @@
       "likes": 104,
       "comments": 1,
       "metrics": {
-        "views": 1936,
+        "views": 1937,
         "reach": 979,
         "saved": 3,
         "shares": 2
@@ -19,6 +19,24 @@
       "width": 3072,
       "height": 4096,
       "thumb": "gallery/thumbs/18128390953679722.jpg"
+    },
+    {
+      "id": "18085414919322213",
+      "file": "gallery/18085414919322213.jpg",
+      "caption": "Wrong Tide!\n\n12 x 16”",
+      "permalink": "https://www.instagram.com/p/DejzOfEEeZR/",
+      "timestamp": "2026-10-16T14:57:34+0000",
+      "likes": 51,
+      "comments": 3,
+      "metrics": {
+        "views": 461,
+        "reach": 188,
+        "saved": 0,
+        "shares": 0
+      },
+      "width": 3719,
+      "height": 3116,
+      "thumb": "gallery/thumbs/18085414919322213.jpg"
     },
     {
       "id": "18125501578873646",
@@ -29,8 +47,8 @@
       "likes": 66,
       "comments": 4,
       "metrics": {
-        "views": 1171,
-        "reach": 591,
+        "views": 1172,
+        "reach": 592,
         "saved": 0,
         "shares": 0
       },
@@ -47,8 +65,8 @@
       "likes": 62,
       "comments": 3,
       "metrics": {
-        "views": 1356,
-        "reach": 743,
+        "views": 1360,
+        "reach": 744,
         "saved": 0,
         "shares": 2
       },
@@ -75,24 +93,6 @@
       "thumb": "gallery/thumbs/18113094236327718.jpg"
     },
     {
-      "id": "18085414919322213",
-      "file": "gallery/18085414919322213.jpg",
-      "caption": "Wrong Tide!\n\n12 x 16”",
-      "permalink": "https://www.instagram.com/p/DejzOfEEeZR/",
-      "timestamp": "2026-10-16T14:57:34+0000",
-      "likes": 34,
-      "comments": 0,
-      "metrics": {
-        "views": 276,
-        "reach": 108,
-        "saved": 0,
-        "shares": 0
-      },
-      "width": 3719,
-      "height": 3116,
-      "thumb": "gallery/thumbs/18085414919322213.jpg"
-    },
-    {
       "id": "17964787119117516",
       "file": "gallery/17964787119117516.jpg",
       "caption": "1192 - @n_y_george vibes\n20 x 16”",
@@ -101,7 +101,7 @@
       "likes": 81,
       "comments": 11,
       "metrics": {
-        "views": 2575,
+        "views": 2576,
         "reach": 1322,
         "saved": 10,
         "shares": 3
@@ -137,8 +137,8 @@
       "likes": 61,
       "comments": 5,
       "metrics": {
-        "views": 1141,
-        "reach": 581,
+        "views": 1142,
+        "reach": 583,
         "saved": 3,
         "shares": 0
       },
