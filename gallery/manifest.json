@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-10-17T20:45:07+00:00",
+  "updated": "2026-10-18T04:47:34+00:00",
   "posts": [
     {
       "id": "18085414919322213",
@@ -8,11 +8,11 @@
       "caption": "Wrong Tide!\n\n12 x 16”",
       "permalink": "https://www.instagram.com/p/DejzOfEEeZR/",
       "timestamp": "2026-10-16T14:57:34+0000",
-      "likes": 72,
+      "likes": 74,
       "comments": 3,
       "metrics": {
-        "views": 751,
-        "reach": 303,
+        "views": 796,
+        "reach": 316,
         "saved": 0,
         "shares": 1
       },
@@ -47,7 +47,7 @@
       "likes": 67,
       "comments": 4,
       "metrics": {
-        "views": 1177,
+        "views": 1178,
         "reach": 592,
         "saved": 0,
         "shares": 0
@@ -65,7 +65,7 @@
       "likes": 62,
       "comments": 3,
       "metrics": {
-        "views": 1364,
+        "views": 1366,
         "reach": 744,
         "saved": 0,
         "shares": 2
@@ -137,7 +137,7 @@
       "likes": 61,
       "comments": 5,
       "metrics": {
-        "views": 1145,
+        "views": 1147,
         "reach": 584,
         "saved": 3,
         "shares": 0
