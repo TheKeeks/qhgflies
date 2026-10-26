@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-10-26T13:20:26+00:00",
+  "updated": "2026-10-26T22:46:37+00:00",
   "posts": [
     {
       "id": "18085414919322213",
@@ -11,7 +11,7 @@
       "likes": 89,
       "comments": 3,
       "metrics": {
-        "views": 962,
+        "views": 968,
         "reach": 387,
         "saved": 0,
         "shares": 1
@@ -47,7 +47,7 @@
       "likes": 67,
       "comments": 4,
       "metrics": {
-        "views": 1197,
+        "views": 1198,
         "reach": 600,
         "saved": 0,
         "shares": 0
@@ -62,17 +62,35 @@
       "caption": "A few little side projects as of late\n\n8x10 and 9x12 region",
       "permalink": "https://www.instagram.com/p/De2oP2PEc4I/",
       "timestamp": "2026-10-23T22:27:12+0000",
-      "likes": 34,
+      "likes": 35,
       "comments": 3,
       "metrics": {
-        "views": 682,
-        "reach": 262,
+        "views": 700,
+        "reach": 264,
         "saved": 0,
         "shares": 0
       },
       "width": 4031,
       "height": 3138,
       "thumb": "gallery/thumbs/18169542913485629.jpg"
+    },
+    {
+      "id": "18240012709316516",
+      "file": "gallery/18240012709316516.jpg",
+      "caption": "Bird Rock - journal sketch. There’s one of these for many of the larger paintings I do. Here’s the fisherman as a bonus\n\n6x10”",
+      "permalink": "https://www.instagram.com/p/DesTwVikYTH/",
+      "timestamp": "2026-10-19T22:15:44+0000",
+      "likes": 41,
+      "comments": 1,
+      "metrics": {
+        "views": 587,
+        "reach": 260,
+        "saved": 0,
+        "shares": 0
+      },
+      "width": 2625,
+      "height": 1703,
+      "thumb": "gallery/thumbs/18240012709316516.jpg"
     },
     {
       "id": "18090243707163007",
@@ -91,24 +109,6 @@
       "width": 3078,
       "height": 2349,
       "thumb": "gallery/thumbs/18090243707163007.jpg"
-    },
-    {
-      "id": "18240012709316516",
-      "file": "gallery/18240012709316516.jpg",
-      "caption": "Bird Rock - journal sketch. There’s one of these for many of the larger paintings I do. Here’s the fisherman as a bonus\n\n6x10”",
-      "permalink": "https://www.instagram.com/p/DesTwVikYTH/",
-      "timestamp": "2026-10-19T22:15:44+0000",
-      "likes": 41,
-      "comments": 1,
-      "metrics": {
-        "views": 581,
-        "reach": 257,
-        "saved": 0,
-        "shares": 0
-      },
-      "width": 2625,
-      "height": 1703,
-      "thumb": "gallery/thumbs/18240012709316516.jpg"
     },
     {
       "id": "18113094236327718",
@@ -173,7 +173,7 @@
       "likes": 61,
       "comments": 5,
       "metrics": {
-        "views": 1164,
+        "views": 1167,
         "reach": 589,
         "saved": 3,
         "shares": 0
