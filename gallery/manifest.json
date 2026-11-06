@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-11-05T20:07:49+00:00",
+  "updated": "2026-11-06T07:03:01+00:00",
   "posts": [
     {
       "id": "18085414919322213",
@@ -8,11 +8,11 @@
       "caption": "Wrong Tide!\n\n12 x 16”",
       "permalink": "https://www.instagram.com/p/DejzOfEEeZR/",
       "timestamp": "2026-10-16T14:57:34+0000",
-      "likes": 89,
+      "likes": 90,
       "comments": 3,
       "metrics": {
-        "views": 996,
-        "reach": 398,
+        "views": 1011,
+        "reach": 412,
         "saved": 0,
         "shares": 1
       },
@@ -29,8 +29,8 @@
       "likes": 105,
       "comments": 1,
       "metrics": {
-        "views": 1967,
-        "reach": 988,
+        "views": 1980,
+        "reach": 998,
         "saved": 3,
         "shares": 2
       },
@@ -44,11 +44,11 @@
       "caption": "Waterworks — type of day that leaves you wanting to stay forever. Experimenting with how much white paper can make it to the finish line\n\n12x16”",
       "permalink": "https://www.instagram.com/p/DfUk8JLkfa-/",
       "timestamp": "2026-11-04T13:35:30+0000",
-      "likes": 42,
+      "likes": 45,
       "comments": 0,
       "metrics": {
-        "views": 616,
-        "reach": 230,
+        "views": 684,
+        "reach": 260,
         "saved": 0,
         "shares": 0
       },
@@ -65,8 +65,8 @@
       "likes": 67,
       "comments": 4,
       "metrics": {
-        "views": 1220,
-        "reach": 613,
+        "views": 1237,
+        "reach": 624,
         "saved": 0,
         "shares": 0
       },
@@ -83,8 +83,8 @@
       "likes": 36,
       "comments": 3,
       "metrics": {
-        "views": 795,
-        "reach": 303,
+        "views": 813,
+        "reach": 317,
         "saved": 0,
         "shares": 0
       },
@@ -101,8 +101,8 @@
       "likes": 44,
       "comments": 1,
       "metrics": {
-        "views": 635,
-        "reach": 287,
+        "views": 652,
+        "reach": 303,
         "saved": 0,
         "shares": 0
       },
@@ -119,8 +119,8 @@
       "likes": 62,
       "comments": 3,
       "metrics": {
-        "views": 1402,
-        "reach": 754,
+        "views": 1420,
+        "reach": 767,
         "saved": 0,
         "shares": 2
       },
@@ -137,14 +137,32 @@
       "likes": 72,
       "comments": 7,
       "metrics": {
-        "views": 1180,
-        "reach": 475,
+        "views": 1190,
+        "reach": 484,
         "saved": 0,
         "shares": 0
       },
       "width": 1595,
       "height": 1064,
       "thumb": "gallery/thumbs/18113094236327718.jpg"
+    },
+    {
+      "id": "17996833578103763",
+      "file": "gallery/17996833578103763.jpg",
+      "caption": "6, 7, 8 - more like 8, 6, and a little bit of 7\n\n12x16”",
+      "permalink": "https://www.instagram.com/p/DfXNKLRkZl4/",
+      "timestamp": "2026-11-05T14:05:26+0000",
+      "likes": 27,
+      "comments": 0,
+      "metrics": {
+        "views": 434,
+        "reach": 184,
+        "saved": 0,
+        "shares": 0
+      },
+      "width": 3208,
+      "height": 2406,
+      "thumb": "gallery/thumbs/17996833578103763.jpg"
     },
     {
       "id": "17964787119117516",
@@ -155,32 +173,14 @@
       "likes": 81,
       "comments": 11,
       "metrics": {
-        "views": 2587,
-        "reach": 1322,
+        "views": 2591,
+        "reach": 1326,
         "saved": 10,
-        "shares": 3
+        "shares": 4
       },
       "width": 2126,
       "height": 2694,
       "thumb": "gallery/thumbs/17964787119117516.jpg"
-    },
-    {
-      "id": "17996833578103763",
-      "file": "gallery/17996833578103763.jpg",
-      "caption": "6, 7, 8 - more like 8, 6, and a little bit of 7\n\n12x16”",
-      "permalink": "https://www.instagram.com/p/DfXNKLRkZl4/",
-      "timestamp": "2026-11-05T14:05:26+0000",
-      "likes": 18,
-      "comments": 0,
-      "metrics": {
-        "views": 259,
-        "reach": 109,
-        "saved": 0,
-        "shares": 0
-      },
-      "width": 3208,
-      "height": 2406,
-      "thumb": "gallery/thumbs/17996833578103763.jpg"
     },
     {
       "id": "17910210267141609",
@@ -191,8 +191,8 @@
       "likes": 26,
       "comments": 1,
       "metrics": {
-        "views": 822,
-        "reach": 531,
+        "views": 824,
+        "reach": 533,
         "saved": 2,
         "shares": 0
       },
@@ -209,8 +209,8 @@
       "likes": 61,
       "comments": 6,
       "metrics": {
-        "views": 1657,
-        "reach": 661,
+        "views": 1665,
+        "reach": 664,
         "saved": 2,
         "shares": 0
       },
