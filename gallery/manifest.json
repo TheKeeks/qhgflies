@@ -1,6 +1,6 @@
 {
   "source": "instagram",
-  "updated": "2026-11-18T07:43:59+00:00",
+  "updated": "2026-11-18T20:44:16+00:00",
   "posts": [
     {
       "id": "18085414919322213",
@@ -75,6 +75,24 @@
       "thumb": "gallery/thumbs/18169542913485629.jpg"
     },
     {
+      "id": "17996833578103763",
+      "file": "gallery/17996833578103763.jpg",
+      "caption": "6, 7, 8 - more like 8, 6, and a little bit of 7\n\n12x16”",
+      "permalink": "https://www.instagram.com/p/DfXNKLRkZl4/",
+      "timestamp": "2026-11-05T14:05:26+0000",
+      "likes": 35,
+      "comments": 0,
+      "metrics": {
+        "views": 706,
+        "reach": 293,
+        "saved": 0,
+        "shares": 0
+      },
+      "width": 3208,
+      "height": 2406,
+      "thumb": "gallery/thumbs/17996833578103763.jpg"
+    },
+    {
       "id": "18240012709316516",
       "file": "gallery/18240012709316516.jpg",
       "caption": "Bird Rock - journal sketch. There’s one of these for many of the larger paintings I do. Here’s the fisherman as a bonus\n\n6x10”",
@@ -91,24 +109,6 @@
       "width": 2625,
       "height": 1703,
       "thumb": "gallery/thumbs/18240012709316516.jpg"
-    },
-    {
-      "id": "17996833578103763",
-      "file": "gallery/17996833578103763.jpg",
-      "caption": "6, 7, 8 - more like 8, 6, and a little bit of 7\n\n12x16”",
-      "permalink": "https://www.instagram.com/p/DfXNKLRkZl4/",
-      "timestamp": "2026-11-05T14:05:26+0000",
-      "likes": 35,
-      "comments": 0,
-      "metrics": {
-        "views": 698,
-        "reach": 291,
-        "saved": 0,
-        "shares": 0
-      },
-      "width": 3208,
-      "height": 2406,
-      "thumb": "gallery/thumbs/17996833578103763.jpg"
     },
     {
       "id": "18090243707163007",
